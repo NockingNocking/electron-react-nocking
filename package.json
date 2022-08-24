@@ -1,7 +1,7 @@
 {
     "name": "electron-react-nocking",
     "author": "nocking",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "main": "src/main/main.js",
     "private": true,
     "dependencies": {
@@ -21,7 +21,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\"",
-        "pack": "react-scripts build && electron-builder --dir",
+        "pack": "react-scripts build && cross-env GH_TOKEN=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 && electron-builder --dir",
         "dist": "react-scripts build && cross-env GH_TOKEN=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 && electron-builder -p always"
     },
     "eslintConfig": {
