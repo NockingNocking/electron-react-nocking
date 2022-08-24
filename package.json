@@ -1,7 +1,7 @@
 {
     "name": "electron-react-nocking",
     "author": "nocking",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "main": "src/main/main.js",
     "private": true,
     "dependencies": {
