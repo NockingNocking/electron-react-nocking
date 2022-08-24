@@ -1,6 +1,7 @@
 {
-  "name": "electron",
-  "version": "0.1.0",
+  "name": "electron-react-nocking",
+  "author":"nocking",
+  "version": "1.0.1",
   "main": "src/main/main.js",
   "private": true,
   "dependencies": {
@@ -56,7 +57,7 @@
       {
           "provider": "github",
           "owner": "NockingNocking",
-          "repo": "你的GitHub上的项目名称"
+          "repo": "electron-react-nocking"
       }
   ],
     "files": [  

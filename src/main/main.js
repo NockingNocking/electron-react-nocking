@@ -2,7 +2,7 @@
  * @Author: Mocking 497773732@qq.com
  * @Date: 2022-08-24 10:10:53
  * @LastEditors: Mocking 497773732@qq.com
- * @LastEditTime: 2022-08-24 12:17:42
+ * @LastEditTime: 2022-08-24 16:34:11
  * @FilePath: \electron\src\main\main.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -39,13 +39,17 @@ const createMainWindow = () => {
     : `${path.join(__dirname, "../../build/index.html")}`;
 
   // 如果是开发环境下，我们就打开控制台
-  if (isDev) {
-    mainWindow.webContents.openDevTools();
-  }
-  // 这里是为了在本地做应用升级测试使用
   // if (isDev) {
-  //   autoUpdater.updateConfigPath = path.join(__dirname, "dev-app-update.yml");
+  //   mainWindow.webContents.openDevTools();
   // }
+  mainWindow.webContents.openDevTools();
+  // 这里是为了在本地做应用升级测试使用
+  if (isDev) {
+    autoUpdater.updateConfigPath = path.join(
+      __dirname,
+      "../../dev-app-update.yml"
+    );
+  }
 
   // 主进程跟渲染进程通信
   const sendUpdateMessage = (text) => {
