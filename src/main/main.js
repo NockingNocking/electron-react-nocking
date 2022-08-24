@@ -2,12 +2,13 @@
  * @Author: Mocking 497773732@qq.com
  * @Date: 2022-08-24 10:10:53
  * @LastEditors: Mocking 497773732@qq.com
- * @LastEditTime: 2022-08-24 16:34:11
+ * @LastEditTime: 2022-08-24 20:40:46
  * @FilePath: \electron\src\main\main.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-const { app, BrowserWindow, ipcMain, dialog } = require("electron");
+const { app, Menu, BrowserWindow, ipcMain, dialog } = require("electron");
 const { autoUpdater } = require("electron-updater");
+
 const path = require("path");
 const isDev = require("electron-is-dev");
 
@@ -25,6 +26,8 @@ const createMainWindow = () => {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    title: "今天你好运了吗",
+    icon: "../../assets/logo.png",
     webPreferences: {
       webSecurity: false,
       nodeIntegration: false,
@@ -134,7 +137,14 @@ const createMainWindow = () => {
 };
 
 // 当应用已经加载完成后，创建主窗口
-app.on("ready", createMainWindow);
+app.on("ready", () => {
+  createMainWindow();
+  Menu.setApplicationMenu(null);
+  //TODO:hide menu for Mac
+  // if (process.platform !== "darwin") {
+  //   app.dock.hide();
+  // }
+});
 
 // 当所有窗口关闭后，应用退出
 app.on("window-all-closed", () => {
