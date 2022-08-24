@@ -1,7 +1,7 @@
 {
     "name": "electron-react-nocking",
     "author": "nocking",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "src/main/main.js",
     "private": true,
     "dependencies": {
@@ -83,7 +83,7 @@
         },
         "dmg": {
             "background": "assets/appdmg.png",
-            "icon": "assets/icon.icns",
+            "icon": "assets/logo.png",
             "iconSize": 100,
             "contents": [
                 {
@@ -110,7 +110,7 @@
                 "zip"
             ],
             "verifyUpdateCodeSignature": false,
-            "icon": "assest/icon.ico",
+            "icon": "assest/logo.png",
             "artifactName": "${productName}-Web-Setup-${version}.${ext}"
         },
         "nsis": {

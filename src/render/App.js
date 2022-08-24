@@ -2,7 +2,7 @@
  * @Author: Mocking 497773732@qq.com
  * @Date: 2022-08-24 16:37:21
  * @LastEditors: Mocking 497773732@qq.com
- * @LastEditTime: 2022-08-24 21:02:18
+ * @LastEditTime: 2022-08-24 21:08:00
  * @FilePath: \electron-react-nocking\src\render\App.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -43,8 +43,6 @@ const App = () => {
   return (
     <div>
       <p>current app version: {version}</p>
-      <p>测试自动打包</p>
-      <p>测试自动打包</p>
       <p>{text}</p>
       <Button type="primary">Button</Button>
       {progress ? <p>下载进度：{progress}%</p> : null}
