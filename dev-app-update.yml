@@ -1,3 +1,8 @@
-provider: github
-owner: NockingNocking
-repo: electron-react-nocking
+version: 1.0.8
+files:
+  - url: electron-builder-demo-Web-Setup-1.0.8.exe
+    sha512: S1/gA87pxWMfffX0WmCjZ6Q0HRHUBAE6o3ZZqWDF/XBqVVhBt6ipkZGTuZQgwEEyG3RvvF+I67Q9oJf7OQNIWQ==
+    size: 100773739
+path: electron-builder-demo-Web-Setup-1.0.8.exe
+sha512: S1/gA87pxWMfffX0WmCjZ6Q0HRHUBAE6o3ZZqWDF/XBqVVhBt6ipkZGTuZQgwEEyG3RvvF+I67Q9oJf7OQNIWQ==
+releaseDate: "2022-08-24T15:14:15.629Z"
