@@ -2,7 +2,7 @@
  * @Author: Mocking 497773732@qq.com
  * @Date: 2022-08-25 09:36:39
  * @LastEditors: Mocking 497773732@qq.com
- * @LastEditTime: 2022-08-25 09:36:56
+ * @LastEditTime: 2022-08-25 09:45:45
  * @FilePath: \electron-react-nocking\src\render\components\Update\index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -42,7 +42,7 @@ const Update = () => {
 
   return (
     <>
-      <p>current app version: {version}</p>
+      <p>current app version is: {version}</p>
       <p>{text}</p>
       {progress ? <p>下载进度：{progress}%</p> : null}
     </>
