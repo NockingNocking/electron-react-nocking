@@ -1,7 +1,7 @@
 {
     "name": "electron-react-nocking",
     "author": "nocking",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "main": "src/main/main.js",
     "private": true,
     "dependencies": {
@@ -22,7 +22,7 @@
         "eject": "react-scripts eject",
         "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\"",
         "pack": "react-scripts build && electron-builder --dir",
-        "dist": "react-scripts build && electron-builder -p always --location=global"
+        "dist": "react-scripts build && electron-builder -p always"
     },
     "eslintConfig": {
         "extends": [
