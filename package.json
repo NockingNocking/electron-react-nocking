@@ -48,12 +48,13 @@
         "cross-env": "^7.0.3",
         "electron": "^20.0.3",
         "electron-builder": "^23.3.3",
+        "styled-components": "^5.3.5",
         "wait-on": "^6.0.1"
     },
     "homepage": "./",
     "build": {
         "appId": "electronBuilderDemo",
-        "productName": "electron-builder-demo",
+        "productName": "今天你好运了吗",
         "publish": [
             {
                 "provider": "github",
@@ -110,7 +111,7 @@
                 "zip"
             ],
             "verifyUpdateCodeSignature": false,
-            "icon": "assest/icon.ico",
+            "icon": "assest/icon.png",
             "artifactName": "${productName}-Web-Setup-${version}.${ext}"
         },
         "nsis": {
