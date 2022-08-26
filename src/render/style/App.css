@@ -1,1 +1,9 @@
 @import "~antd/dist/antd.css";
+.name{
+  opacity: 0.5;
+  background: rgba(255, 255, 255, 0.5);
+text-align: center;
+text-align: end;
+clip-path: ellipse(130px 140px at 14% 20%);
+
+}

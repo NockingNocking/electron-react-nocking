@@ -3,7 +3,7 @@
  * @Date: 2022-08-24 10:10:53
  * @LastEditors: Mocking 497773732@qq.com
 <<<<<<< HEAD
- * @LastEditTime: 2022-08-24 21:12:47
+ * @LastEditTime: 2022-08-26 12:44:24
 =======
  * @LastEditTime: 2022-08-25 09:21:32
 >>>>>>> dev
@@ -28,10 +28,11 @@ let mainWindow = null;
 
 const createMainWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 400,
-    height: 700,
+    width: 800,
+    height: 660,
     title: "今天你好运了吗",
     icon: "../../assets/logo.png",
+    frame: false,
     webPreferences: {
       webSecurity: false,
       nodeIntegration: false,
@@ -142,7 +143,7 @@ const createMainWindow = () => {
 // 当应用已经加载完成后，创建主窗口
 app.on("ready", () => {
   createMainWindow();
-  Menu.setApplicationMenu(null);
+  // Menu.setApplicationMenu(null);
   //TODO:hide menu for Mac
   // if (process.platform !== "darwin") {
   //   app.dock.hide();
